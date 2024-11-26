@@ -9,9 +9,17 @@ body {
 }
 
 .heading0 {
-  @apply font-Onest font-bold text-8xl sm:text-[128px] sm:leading-none leading-[56px] tracking-[-2px];
+  @apply font-Onest font-bold text-8xl sm:text-[128px] sm:leading-none leading-[56px] tracking-[%-2px];
 }
 
 .heading1 {
-  @apply font-Onest font-bold sm:leading-none leading-[56px] tracking-[-2px];
+  @apply font-Onest font-bold sm:leading-none leading-[56px] tracking-[%-2px];
+}
+
+.heading3 {
+  @apply font-Onest font-bold text-[40px] leading-[48px] tracking-[%-2px];
+}
+
+.heading6 {
+  @apply font-Onest font-normal text-[22px] leading-[48px] tracking-[%-2px];
 }

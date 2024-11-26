@@ -25,7 +25,8 @@ module.exports = {
           "p2" : "rgba(13, 13, 13, 0.7)",
           "p3" : "rgba(13, 13, 13, 0.4)",
           "p4" : "rgba(13, 13, 13, 0.1)",
-        }
+        },
+        "placeholder" : "#D9D9D9",
       },
 
       fontFamily: {
