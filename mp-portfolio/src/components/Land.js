@@ -1,5 +1,7 @@
 "use client";
 
+import { TourGuider } from "./TourGuider";
+
 export const Land = () => {
   return (
     <div className="flex flex-col items-center w-screen h-screen">
@@ -20,6 +22,7 @@ export const Land = () => {
                 Hedefleyen biri
             </label>
         </div>
+        <TourGuider />
     </div>
   )
 }
