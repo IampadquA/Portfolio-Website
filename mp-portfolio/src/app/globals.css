@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.heading0 {
+  @apply font-Onest font-bold text-8xl sm:text-[128px] sm:leading-none leading-[56px] tracking-[-2px];
+}
+
+.heading1 {
+  @apply font-Onest font-bold sm:leading-none leading-[56px] tracking-[-2px];
+}
