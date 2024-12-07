@@ -24,7 +24,7 @@ export default function IntroSection() {
         className="z-50 inset-0 top-0 left-0 absolute bg-[#565656] justify-items-center content-center lg:grid lg:grid-cols-5 lg:justify-items-start"
         initial={{ scaleY: 0, transformOrigin: "bottom" }}
         animate={{ scaleY: 1, transformOrigin: "bottom" }}
-        exit={{ height: 0, transformOrigin: "top" }}
+        exit={{ scaleY : 0, transformOrigin: "top" }}
         transition={{ duration: 0.5, delay: 2 }}
       >
         <div className="z-60 relative flex flex-col gap-14 text-bg-white text-[64px] sm:text-[96px] md:text-[124px] md:col-start-2 md:col-span-3 heading1">

@@ -1,9 +1,9 @@
-import { Urbanist , Comic_Neue } from "next/font/google";
+import { Urbanist , Onest } from "next/font/google";
 import "./globals.css";
 
 const urbanist = Urbanist({subsets : ["latin"]});
 
-const test = Comic_Neue({subsets : ["latin"] , weight : ['400']});
+const onest = Onest({subsets : ["latin"]});
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${test.variable} antialiased`}
+        className={`${onest.variable} antialiased`}
       >
         {children}
       </body>

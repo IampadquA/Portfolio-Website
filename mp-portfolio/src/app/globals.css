@@ -16,10 +16,18 @@ body {
   @apply font-Onest font-bold sm:leading-none leading-[56px] tracking-[%-2px];
 }
 
+.heading11 {
+  @apply font-Onest font-bold text-[64px] sm:leading-none leading-[56px] tracking-[%-2px];
+}
+
 .heading3 {
   @apply font-Onest font-bold text-[40px] leading-[48px] tracking-[%-2px];
 }
 
 .heading6 {
   @apply font-Onest font-normal text-[22px] leading-[48px] tracking-[%-2px];
+}
+
+.label {
+  @apply font-urbanist font-normal text-[14px] sm:text-[24px] sm:leading-[26px];
 }
