@@ -2,6 +2,9 @@ import { Button } from '@/components/Button';
 import React from 'react'
 import { motion } from 'framer-motion';
 import { TourGuider } from '@/components/TourGuider';
+import Image from 'next/image'
+
+
 
 
 export const AboutPage = ({ isMobile }) => {
@@ -29,8 +32,17 @@ export const AboutPage = ({ isMobile }) => {
         viewport={{ margin : "-200px" , once : true }}
         transition={{ duration: 1, delay : 1 }}
         
-        className='w-full min-h-[333px] sm:h-[556px] p-5 border-2'>
-            <div className='w-full h-full bg-placeholder'/>
+        className='w-full min-h-[333px] sm:h-[556px] p-5 border-2 overflow-hidden'>
+            <div className='w-full h-full bg-placeholder'>
+                    <motion.div
+                        initial={{ opacity: 0 } }
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1, delay : 2 }}
+                        className='sm:h-[556px]'
+                    >
+                        <Image src="/images/linkedinpp.png" width={1500} height={2000} className='rounded-lg'/>
+                    </motion.div>
+            </div>
         </motion.div>
         <div className='w-full flex flex-col gap-9 sm:gap-16 px-8 justify-items-center font-urbanist font-semibold text-[16px] sm:text-[28px] leading-9'>
             {texts.map((text,index) => (
@@ -66,7 +78,7 @@ export const AboutPage = ({ isMobile }) => {
     );
 
     const desktopAbout = (
-        <div className='flex w-screen gap-10 p-14 content-center justify-items-center'>
+        <div className='flex w-screen gap-10 p-14 content-center justify-items-center bg-bg-white'>
             <div className='flex flex-col gap-16 xl:gap-8'>
                 <motion.h1
                 initial={{ y : -10, opacity: 0 }}
@@ -89,15 +101,20 @@ export const AboutPage = ({ isMobile }) => {
                     ))}
                 </div>
             </div>
-                <div className='w-full flex flex-col gap-14 items-center justify-center'>
+                <div className='w-full h-fit flex flex-col gap-14 items-center justify-center'>
                     <motion.div
                     initial={{ scaleY: 0, opacity: 0 , transformOrigin: "top"} }
                     whileInView={{ scaleY : 1, opacity: 1 }}
                     viewport={{ margin : "-200px" , once : true }}
                     transition={{ duration: 1, delay : 1 }}
                     
-                    className='w-4/5 max-w-[495px] h-[470px] rounded-lg bg-placeholder '>
-                        
+                    className='relative w-4/5 max-w-[495px] h-[470px] rounded-lg bg-placeholder overflow-hidden '>
+                        <motion.div
+                        initial={{ opacity: 0 } }
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.5, delay : 2 }}>
+                            <Image src="/images/linkedinpp.png" width={1500} height={2000}  className='rounded-lg'/>    
+                        </motion.div>
                     </motion.div>
                     <div className='w-4/5 max-w-[495px]'>
                         <Button className="self-start"/>
@@ -110,7 +127,6 @@ export const AboutPage = ({ isMobile }) => {
   return (
     <>
         { isMobile ? mobileAbout : desktopAbout }
-        <TourGuider className={"justify-self-center mt-32 lg:mt-16 xl:mt-4"}/>
     </>
   )
 }

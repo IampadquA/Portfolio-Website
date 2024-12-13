@@ -27,6 +27,7 @@ module.exports = {
           "p4" : "rgba(13, 13, 13, 0.1)",
         },
         "placeholder" : "#D9D9D9",
+        "error" :"#F2364C",
       },
 
       fontFamily: {

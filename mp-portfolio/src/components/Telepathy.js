@@ -2,6 +2,7 @@ import React from 'react'
 import { useRef } from 'react'
 import { useTransform , useScroll} from 'framer-motion'    
 import { PresentationCard } from './PresentationCard'
+import { Safari } from './SafariMockup'
 
 export const Telepathy = () => {
 
@@ -34,19 +35,19 @@ export const Telepathy = () => {
     <div ref={ref} className='w-full justify-items-center content-center flex flex-col gap-1 py-9 label'>
         <h1 
         className='font-Onest font-semibold text-2xl sm:text-[32px] text-center leading-10 tracking-[-2%]'>Telepathy Game</h1>
-        <PresentationCard className='h-[220px] sm:h-[589px] p-7' />
+        <Safari src={"/images/TelepathyGameImages/tpmainpage1.png"} className='h-[220px] sm:h-[589px] p-7' />
         <div className=' px-7 sm:p-7'>
             <p>{text[0]}</p>
         </div>
-        <PresentationCard className='sm:h-[336px] p-7' />
+        <Safari src={"/images/TelepathyGameImages/tpInvite.png"} className='sm:h-[336px] p-7' />
         <div className=' px-7 sm:p-7'>
             <p>{text[1]}</p>
         </div>
-        <PresentationCard className='h-[120px] sm:h-[412px] p-7' />
+        <Safari src={"/images/TelepathyGameImages/tpMatchmakingoage.png"} className='h-[120px] sm:h-[412px] p-7' />
         <div className=' px-7 sm:p-7'>
             <p>{text[2]}</p>
         </div>
-        <PresentationCard className='h-[272px] sm:h-[470px] p-7' discription={true} text="Some trees flourish, others die. Some cattle grow strong, others are taken by wolves. Some men are born rich enough and dumb enough to enjoy their lives. Ain't nothing fair." />
+        <Safari src={"/images/TelepathyGameImages/tpGamePage.png"} className='h-[272px] sm:h-[470px] p-7' discription={true} text="Some trees flourish, others die. Some cattle grow strong, others are taken by wolves. Some men are born rich enough and dumb enough to enjoy their lives. Ain't nothing fair." />
         <div className=' px-7 sm:p-7'>
             <p>{text[3]}</p>
         </div>

@@ -13,7 +13,7 @@ export const Land = ({ className ,isMobile } ) => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 1 + animationTime,}}
                     
-                    >Ben&nbsp; </motion.h1> 
+                    >I am&nbsp; </motion.h1> 
                     <motion.label 
                     initial={{ x: -10, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -35,7 +35,7 @@ export const Land = ({ className ,isMobile } ) => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 2.5+ animationTime,}}
                 
-                className="text-center"> Bir Öğrenci Geliştirici</motion.h2>
+                className="text-center"> a Student Developer</motion.h2>
                 <motion.div 
                 
                 initial={{ scaleX: 0, opacity: 0 , transformOrigin: "left"} }
@@ -50,9 +50,9 @@ export const Land = ({ className ,isMobile } ) => {
             transition={{ delay: 3.5 + animationTime,}}
             
             className="heading6 sm:text-[32px]">
+                who shoot for the
                 <motion.label
-                style={{ background: "linear-gradient(91.56deg, #36D0F2 45.16%, #D74EDA 105.51%)",WebkitBackgroundClip: "text",WebkitTextFillColor: "transparent",}}>Yüksekleri </motion.label>
-                Hedefleyen biri
+                style={{ background: "linear-gradient(91.56deg, #36D0F2 45.16%, #D74EDA 105.51%)",WebkitBackgroundClip: "text",WebkitTextFillColor: "transparent",}}>stars </motion.label>
             </motion.label>
         </div>
     );
@@ -66,7 +66,7 @@ export const Land = ({ className ,isMobile } ) => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 1 + animationTime}}
                     
-                    className=" text-nowrap ">Ben&nbsp;
+                    className=" text-nowrap ">I am&nbsp;
                         <motion.label
                         initial={{ x: -10, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
@@ -93,14 +93,14 @@ export const Land = ({ className ,isMobile } ) => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 4.3+ animationTime,}}
                     
-                    className="text-nowrap ">Bir Öğrenci Geliştirici</motion.h1>
+                    className="text-nowrap ">A Student Developer</motion.h1>
                 </div>
                 <motion.h1
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 5 + animationTime,}}
                 
-                >Yüksekleri Hedefleyen Biri</motion.h1>
+                >who shoot for the stars</motion.h1>
             </div>
         </div>
     );

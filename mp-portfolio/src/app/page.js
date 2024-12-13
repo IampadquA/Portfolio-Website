@@ -1,7 +1,10 @@
 'use client';
+import { Footer } from "@/components/Footer";
 import IntroSection from "@/components/IntroSection";
+import { Safari } from "@/components/SafariMockup";
 import { TourGuider } from "@/components/TourGuider";
 import { AboutPage } from "@/pages/AboutPage";
+import { ContactPage } from "@/pages/ContactPage";
 import { LandingPage } from "@/pages/LandingPage";
 import { ProjectsPage } from "@/pages/ProjectsPage";
 import { useEffect, useState } from "react";
@@ -9,7 +12,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
-  const [isAnimationEnd, setIsAnimationEnd] = useState(false);
+  const [isAnimationEnd, setIsAnimationEnd] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);  
 
@@ -59,6 +62,8 @@ export default function Home() {
       { !isAnimationEnd && <LandingPage isMobile={ isMobile } />}
       <AboutPage isMobile={isMobile}/>
       <ProjectsPage isMobile={isMobile} isDesktop={isDesktop}/>
+      <ContactPage/>
+      <Footer/>
     </>
   );
 }

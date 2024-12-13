@@ -10,14 +10,14 @@ export default function IntroSection() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
-          Selam
+          Hi
         </motion.h1>
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Ziyaretci
+          Visitor
         </motion.h1>
       </div>
       <motion.div
@@ -34,21 +34,21 @@ export default function IntroSection() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 3 }}
           >
-            İzin verin
+            Let me
           </motion.h1>
           <motion.h2
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 4 }}
           >
-              kendimi
+            Introduce
           </motion.h2>
           <motion.h2
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 4.6 }}
           >
-              tanıtayım
+            Myself
           </motion.h2>
         </div>
       </motion.div>
