@@ -3,6 +3,7 @@ import { useRef } from 'react'
 import { useTransform , useScroll} from 'framer-motion'    
 import { PresentationCard } from './PresentationCard'
 import { Safari } from './SafariMockup'
+import Link from 'next/link'
 
 export const Telepathy = () => {
 
@@ -50,6 +51,7 @@ export const Telepathy = () => {
         <Safari src={"/images/TelepathyGameImages/tpGamePage.png"} className='h-[272px] sm:h-[470px] p-7' discription={true} text="Some trees flourish, others die. Some cattle grow strong, others are taken by wolves. Some men are born rich enough and dumb enough to enjoy their lives. Ain't nothing fair." />
         <div className=' px-7 sm:p-7'>
             <p>{text[3]}</p>
+            <p><br/>You can look at the code and get more information in projects <Link className=" font-bold hover:text-blue-accent" href="https://github.com/IampadquA/Telepathy-Game" target="_blank" >github page</Link></p>
         </div>
     </div>
   )

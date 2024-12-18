@@ -1,42 +1,21 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
-export const Input = ({ InputName, PlaceHolder, Type, className , inputValue , setInputValue }) => {
-    const [validate, setValidate] = useState(true);
-    const [canishowit, setCanIShowIt] = useState(false);
 
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const nameRegex = /^[A-ZÇĞIİÖŞÜa-zçğıöşü]{2,}$/;
-    const companyRegex = /^[A-ZÇĞİÖŞÜa-zçğıöşü0-9\s&-]{3,100}$/;
+const TextAreaRe = ({ InputName , PlaceHolder, Type, className , inputValue , setInputValue }) => {
 
     const handleChange = (event) => {
         const value = event.target.value;
         setInputValue(value);
-        switch (Type) {
-            case "email":
-                setValidate(emailRegex.test(value));
-                break;
-            case "name":
-                setValidate(nameRegex.test(value));
-                break;
-            case "company":
-                setValidate(companyRegex.test(value));
-                break;
-            default:
-                setValidate(value.trim() !== "");
-        }
-    };
+    }
 
-    const handleSubmit = () => {
-        validate ? setCanIShowIt(true) : setCanIShowIt(false);
-    };
 
-    return (
-        <div className={`relative flex flex-col ${className}`}>
+  return (
+    <div className={`relative flex flex-col ${className}`}>
             <label className='w-full font-urbanist font-bold text-xl sm:text-2xl leading-[24px]'>
                 {InputName}
             </label>
-            <motion.input
+            <motion.textarea
                 type={Type}
                 value={inputValue}
                 onChange={handleChange}
@@ -46,13 +25,13 @@ export const Input = ({ InputName, PlaceHolder, Type, className , inputValue , s
                 }}
                 whileFocus={{
                     borderColor: inputValue !== "" 
-                        ? (validate ? "#36d0f2" : "#F2364C") 
+                        ? "#36d0f2"
                         : "#36d0f2",
                     transition: { duration: 0.5, ease: "easeInOut" },
                 }}
                 style={{
                     borderColor: inputValue !== "" 
-                        ? (validate ? "#36d0f2" : "#F2364C") 
+                        ? "#36d0f2"
                         : "#000000"
                 }}
                 onInput={(e) => {
@@ -62,11 +41,11 @@ export const Input = ({ InputName, PlaceHolder, Type, className , inputValue , s
                 className={`min-h-16 w-full p-2 border-b-2 bg-transparent font-urbanist font-medium text-base sm:text-xl text-black text-wrap 
                     placeholder:font-normal placeholder:text-text-p2 focus:outline-none break-words 
                     ${inputValue !== "" 
-                        ? (validate ? "border-blue-primary" : "border-error") 
+                        ? "border-blue-primary" 
                         : "border-black"} ${className}`} 
                 placeholder={PlaceHolder}
             />
-            {validate && inputValue !== "" && (
+            {inputValue !== "" && (
                 <motion.div 
                     initial={{ opacity: 0, y: -10, transformOrigin: "top" }}
                     animate={{ opacity: 1, y: 0, transformOrigin: "top" }}
@@ -92,5 +71,7 @@ export const Input = ({ InputName, PlaceHolder, Type, className , inputValue , s
                 </motion.div>
             )}
         </div>
-    )
+  )
 }
+
+export default TextAreaRe

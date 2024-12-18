@@ -2,7 +2,7 @@
 import { Land } from '@/components/Land'
 import { TourGuider } from '@/components/TourGuider'
 
-export const LandingPage = ({className , isMobile  } ) => {
+export default LandingPage = ({className , isMobile  } ) => {
   return (
     <div className={`flex flex-col w-screen h-screen mt-auto ${className}`}>
         <Land isMobile={isMobile} />

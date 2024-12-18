@@ -6,7 +6,7 @@ export const Footer = () => {
   const socialLinks = [
     {
       name: 'Email',
-      link: "mailto:someone@example.com" // Örnek e-posta linki
+      link: "mailto:tefegulmez@gmail.com?subject=Hello%20Tarık"
     },
     {
       name: 'GitHub',
@@ -14,17 +14,17 @@ export const Footer = () => {
     },
     {
       name: 'LinkedIn',
-      link: "https://www.linkedin.com/in/tar%C4%B1k-efe-g%C3%BClmez-48404430b/"
+      link: 'https://www.linkedin.com/in/tarikefegulmez'
     },
   ];
 
   const routerLinks =
   [
-    "LandPage",
-    "About Me",
-    "Projects",
-    "Techs",
-    "Contact"
+    // "LandPage",
+    // "About Me",
+    // "Projects",
+    // "Techs",
+    // "Contact"
   ]
 
   return (
@@ -42,7 +42,7 @@ export const Footer = () => {
                 <div className='flex flex-col gap-3 font-urbanist font-normal text-sm md:text-base leading-6 text-bg-white'>
                 {socialLinks.map((socialLink, index) => (
                     <Link href={socialLink.link} key={index} target="_blank" rel="noopener noreferrer">
-                    <span className=' text-bg-white'>
+                    <span className=' text-bg-white hover:text-text-p1'>
                         {socialLink.name}
                     </span>
                     </Link>
@@ -56,7 +56,7 @@ export const Footer = () => {
             </div>
         </div> 
       <div className='relative w-full p-3 content-center font-urbanist font-normal text-sm md:text-base leading-6 text-bg-white'>
-        <label>Coded By IampadquA &copy; 2024 Personel Usage  | <Link href={"https://github.com/IampadquA"}  target="_blank" rel="noopener noreferrer"><span>Privacy Politcy</span></Link></label>
+        <label>Coded By IampadquA &copy; 2024 Personel Usage  |</label>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { PresantationGrid } from './PresantationGrid'
 import { ProjectPagePath } from './ProjectPagePath'
 import { useScroll, useTransform , motion } from 'framer-motion';
 import { TechCloud } from './TechCloud';
+import Link from 'next/link';
 
 export const DesktopProjectPage = ({isDesktop = false}) => {
     const containerRef = useRef(null);
@@ -40,7 +41,9 @@ export const DesktopProjectPage = ({isDesktop = false}) => {
         "Key Features",
         "Custom-designed UI/UX (created in Figma) Lobby system Invite mechanism Matchmaking system (implemented from scratch)",
         "Development Journey",
-        "As a personal project to enhance my software and web development skills, TelepathyGame started as a casual, fun concept. The goal was to create a simple yet entertaining game where players try to predict their partner's choices. Frontend Development",
+        "As a personal project to enhance my software and web development skills, TelepathyGame started as a casual, fun concept. The goal was to create a simple yet entertaining game where players try to predict their partner's choices. ",
+        "Frontend Development",
+        "Designed the entire user interface from scratch using Figma Implemented the frontend with React Styled the application using Tailwind CSS Added smooth animations with Framer Motion",
         "Backend Development",
         "Leveraged Firebase Functions and Node.js for backend logic Chose Firebase as the database to explore new technologies Developed lobby, invite, and matchmaking systems independently",
         "Current Status",
@@ -86,12 +89,13 @@ export const DesktopProjectPage = ({isDesktop = false}) => {
                     </motion.div>
                     { isDesktop && 
                     <div className='relative flex flex-col top-[25%] gap-4 my-8'>
-                        <motion.h1 className='font-Onest font-bold text-[44px] leading-[56px] tracking-[-2%]' style={{opacity , translateY}}>{heading}</motion.h1>
+                        <motion.h1 className='font-Onest font-bold text-[44px] leading-[56px] tracking-[-2%]' style={{opacity , translateY}}><Link className="hover:text-blue-accent" href="https://github.com/IampadquA/Telepathy-Game" target="_blank" >{heading}</Link></motion.h1>
                             <motion.div className='w-full h-full overflow-hidden'>
                                 <motion.div className='flex flex-col gap-6 font-urbanist font-normal text-base pr-16 overflow-hidden ' style={{ opacity: opacityt, y: translateYt }} > 
                                     {text.map((item, index) => (
                                         <p key={index}>{item}</p>
                                     ))}
+                                    <p>You can look at the code and get more information in projects <Link className=" font-bold hover:text-blue-accent" href="https://github.com/IampadquA/Telepathy-Game" target="_blank" >github page</Link></p>
                                 </motion.div>
                             </motion.div>
                     </div>}

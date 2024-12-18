@@ -6,7 +6,7 @@ export const Land = ({ className ,isMobile } ) => {
 
     const mobileLand = (
         <div className={`flex flex-col h-full items-center gap-16 sm:gap-36 justify-center self-center ${className}`}>
-            <div className="flex flex-col heading3 sm:text-[64px] sm:leading-[56px] gap-1 sm:gap-4 w-auto items-center ">
+            <div className="flex flex-col heading3 sm:text-[56px] sm:leading-[56px] gap-1 sm:gap-4 w-auto items-center ">
                 <div className="flex">
                     <motion.h1
                         initial={{ y: -10, opacity: 0 }}
@@ -50,7 +50,7 @@ export const Land = ({ className ,isMobile } ) => {
             transition={{ delay: 3.5 + animationTime,}}
             
             className="heading6 sm:text-[32px]">
-                who shoot for the
+                who shoot for the&nbsp; 
                 <motion.label
                 style={{ background: "linear-gradient(91.56deg, #36D0F2 45.16%, #D74EDA 105.51%)",WebkitBackgroundClip: "text",WebkitTextFillColor: "transparent",}}>stars </motion.label>
             </motion.label>

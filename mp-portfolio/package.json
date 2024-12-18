@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@types/react": "^18.3.12",
+    "form-data": "^4.0.1",
     "framer-motion": "^11.13.1",
+    "mailgun": "^0.5.0",
+    "mailgun.js": "^10.2.4",
     "next": "15.0.3",
     "next-themes": "^0.4.4",
     "prop-types": "^15.8.1",

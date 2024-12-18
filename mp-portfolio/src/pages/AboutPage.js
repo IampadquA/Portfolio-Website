@@ -1,13 +1,15 @@
+
 import { Button } from '@/components/Button';
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
-import { TourGuider } from '@/components/TourGuider';
 import Image from 'next/image'
+import { CoolMode } from '@/components/CoolMode';
+import { CoolButton } from '@/components/CoolButton';
 
 
 
 
-export const AboutPage = ({ isMobile }) => {
+export default AboutPage = ({ isMobile }) => {
     const texts = [
         "Full name is Tarık Efe Gülmez",
         "I am 19",
@@ -16,6 +18,26 @@ export const AboutPage = ({ isMobile }) => {
         "I was very enthusiastic and after long insistence, I did a graphic design internship at an agency.",
         "now I am a 2th grade in major and  I wanna get more experience and improe my skills before graduation",
     ]
+
+    const [buttonText,setButtonText] = useState("Hi Button");
+
+    const [counter,setCounter] = useState(0);
+
+    const handleButton = () => {
+        setCounter(counter + 1);
+        
+        if (counter === 1){
+            setButtonText("Hi!");
+        }else if (counter === 5){
+            setButtonText("Yes I get it, Hi");
+        }else if (counter === 10){
+            setButtonText("You are persistent, Hi");
+        }else if (counter === 15){
+            setButtonText("Keep Scrolling, Hi");
+        }else if (counter === 20){
+            setButtonText("I said Scroll");
+        }
+    }
 
     const mobileAbout = (
         <div className='flex flex-col w-screen gap-6 justify-items-center content-center '>
@@ -113,11 +135,11 @@ export const AboutPage = ({ isMobile }) => {
                         initial={{ opacity: 0 } }
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay : 2 }}>
-                            <Image src="/images/linkedinpp.png" width={1500} height={2000}  className='rounded-lg'/>    
+                            <Image src="/images/linkedinpp.png" alt='me' width={1500} height={2000}  className='rounded-lg'/>    
                         </motion.div>
                     </motion.div>
-                    <div className='w-4/5 max-w-[495px]'>
-                        <Button className="self-start"/>
+                    <div className='relative w-4/5 max-w-[495px]'>
+                        <CoolButton className={"self-start"} ButtonName={buttonText} onClick={handleButton}/>
                     </div>
                 </div>
         </div>

@@ -1,8 +1,6 @@
 'use client';
 import { Footer } from "@/components/Footer";
 import IntroSection from "@/components/IntroSection";
-import { Safari } from "@/components/SafariMockup";
-import { TourGuider } from "@/components/TourGuider";
 import { AboutPage } from "@/pages/AboutPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { LandingPage } from "@/pages/LandingPage";

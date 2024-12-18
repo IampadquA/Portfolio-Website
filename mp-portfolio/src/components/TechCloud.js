@@ -134,7 +134,7 @@ export const TechCloud = ({ isDesktop = false }) => {
   return (
     <>
         {isDesktop ? desktop : mobile}
-        <TourGuider />
+        <TourGuider text='just a litte longer' />
     </>
   );
 };
