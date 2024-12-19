@@ -9,7 +9,7 @@ import { CoolButton } from '@/components/CoolButton';
 
 
 
-export default AboutPage = ({ isMobile }) => {
+export const AboutPage = ({ isMobile }) => {
     const texts = [
         "Full name is Tarık Efe Gülmez",
         "I am 19",
@@ -62,7 +62,7 @@ export default AboutPage = ({ isMobile }) => {
                         transition={{ duration: 1, delay : 2 }}
                         className='sm:h-[556px]'
                     >
-                        <Image src="/images/linkedinpp.png" width={1500} height={2000} className='rounded-lg'/>
+                        <Image src="/images/linkedinpp.png" width={1500} height={2000} alt="tarikefe" className='rounded-lg'/>
                     </motion.div>
             </div>
         </motion.div>
@@ -135,7 +135,7 @@ export default AboutPage = ({ isMobile }) => {
                         initial={{ opacity: 0 } }
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay : 2 }}>
-                            <Image src="/images/linkedinpp.png" alt='me' width={1500} height={2000}  className='rounded-lg'/>    
+                            <Image src="/images/linkedinpp.png" alt='tarikefe' width={1500} height={2000}  className='rounded-lg'/>    
                         </motion.div>
                     </motion.div>
                     <div className='relative w-4/5 max-w-[495px]'>
@@ -152,3 +152,5 @@ export default AboutPage = ({ isMobile }) => {
     </>
   )
 }
+
+export default AboutPage;

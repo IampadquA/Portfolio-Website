@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
-export const Input = ({ InputName, PlaceHolder, Type, className , inputValue , setInputValue }) => {
+export const Input = ({ InputName, PlaceHolder, Type, className , inputValue , setInputValue , setIsValid }) => {
     const [validate, setValidate] = useState(true);
     const [canishowit, setCanIShowIt] = useState(false);
 
@@ -15,6 +15,7 @@ export const Input = ({ InputName, PlaceHolder, Type, className , inputValue , s
         switch (Type) {
             case "email":
                 setValidate(emailRegex.test(value));
+                setIsValid(validate);
                 break;
             case "name":
                 setValidate(nameRegex.test(value));

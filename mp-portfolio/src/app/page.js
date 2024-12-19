@@ -5,6 +5,7 @@ import { AboutPage } from "@/pages/AboutPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { LandingPage } from "@/pages/LandingPage";
 import { ProjectsPage } from "@/pages/ProjectsPage";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 
 
@@ -56,6 +57,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Hello Visiter</title>
+      </Head>
       { isAnimationEnd && <IntroSection className={"z-30 "}/>}
       { !isAnimationEnd && <LandingPage isMobile={ isMobile } />}
       <AboutPage isMobile={isMobile}/>

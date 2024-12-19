@@ -36,24 +36,6 @@ export const MobileProjectsPage = () => {
   const openerHeight = useTransform(scrollYProgress, [0.40, 0.55], [initialTransformValue, "100%"]);
 
 
-
-
-  useEffect(() => {
-    const unsubscribe = scrollYProgress.onChange((value) => {
-      console.log("Scroll Progress:", value);
-      console.log("Scroll Y:", y.current);
-    });
-
-    return () => {
-      unsubscribe();   
-    };
-  }, [scrollYProgress]);
-
-  useEffect(() => {
-
-  })
-
-
   return (
     <div ref={containerRef} className='relative h-[900vh]'>
       <motion.div 

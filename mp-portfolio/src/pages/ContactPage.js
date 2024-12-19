@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ContactForm } from '@/components/ContactForm'
 import Link from 'next/link';
+import { AfterSubmit } from '@/components/AfterSubmit';
 
-export default ContactPage = () => {
+export const ContactPage = () => {
+
+    const [isSubmited, setIsSubmited] = useState(false);
   return (
     <div className='relative w-screen md:h-screen flex flex-col gap-12 px-7 sm:px-20 py-9 my-9'>
             <div className='relative flex gap-3 content-center'>
@@ -46,7 +49,7 @@ export default ContactPage = () => {
                     </div>
                 </div>
                 <div className='relative w-full '> 
-                    <ContactForm className="text-center md:text-left" />
+                    { isSubmited ? <AfterSubmit/> : <ContactForm className="text-center md:text-left" setIsSubmited={setIsSubmited} />}
                 </div>
             </div>
 
@@ -54,3 +57,5 @@ export default ContactPage = () => {
     </div>
   )
 }
+
+export default ContactPage;
