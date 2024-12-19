@@ -20,11 +20,6 @@ export const ContactForm = ({ className , setIsSubmited }) => {
       alert('Please fill all the fields');
       return;
     }
-
-    if (!isEmailValidate){
-      alert('Email is Invalide');
-      return;
-    }
     
     try {
       const res = await fetch('/api/contact',{
