@@ -59,7 +59,7 @@ export const AboutPage = ({ isMobile }) => {
                     <motion.div
                         initial={{ opacity: 0 } }
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 1, delay : 2 }}
+                        transition={{ duration: 1, delay : 3 }}
                         className='sm:h-[556px]'
                     >
                         <Image src="/images/linkedinpp.png" width={1500} height={2000} alt="tarikefe" className='rounded-lg'/>

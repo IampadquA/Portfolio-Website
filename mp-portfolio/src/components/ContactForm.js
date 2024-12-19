@@ -10,7 +10,7 @@ export const ContactForm = ({ className , setIsSubmited }) => {
   const [lastNameValue, setLastNameValue] = useState("");
   const [companyValue, setCompanyValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
-  const [isEmailValidate, setIsEmailValidate] = useState(false);
+  const [isEmailValidate, setIsEmailValidate] = useState(true);
   const [messageValue, setMessageValue] = useState("");
 
   const onSubmit = async (event) => {
