@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
-  const [isAnimationEnd, setIsAnimationEnd] = useState(true);
+  const [isAnimationEnd, setIsAnimationEnd] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);  
 
@@ -50,17 +50,12 @@ export default function Home() {
     };
   }, [isAnimationEnd]);
 
-  
-      //<div className="w-screen h-screen justify-items-center content-center">
-      //  <h1 className="heading0">Ben Gay</h1>
-      //</div>
-
   return (
     <>
       <Head>
         <title>Hello Visiter</title>
       </Head>
-      { isAnimationEnd && <IntroSection className={"z-30 "}/>}
+      { isAnimationEnd && <IntroSection className={"z-30"}/>}
       { !isAnimationEnd && <LandingPage isMobile={ isMobile } />}
       <AboutPage isMobile={isMobile}/>
       <ProjectsPage isMobile={isMobile} isDesktop={isDesktop}/>

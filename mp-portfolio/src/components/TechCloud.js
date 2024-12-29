@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import { IconCloud } from './IconClod';
 import { motion } from 'framer-motion';
 import { TourGuider } from './TourGuider';
+import IconCloud from './ui/icon-cloud';
 
 export const TechCloud = ({ isDesktop = false }) => {
   const [text, setText] = useState("And I'm still eager to learn more");

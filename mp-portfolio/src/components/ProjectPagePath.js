@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 export const ProjectPagePath = ({ transform }) => {
   return (
-    <div className='relative w-screen h-screen justify-items-center content-center flex-shrink-0 '>
+    <div className='relative flex w-screen h-screen items-center justify-center flex-shrink-0 '>
               <motion.svg 
               style={{ top : transform }}
 

@@ -58,7 +58,7 @@ export const Land = ({ className ,isMobile } ) => {
     );
 
     const desktopLand = (
-        <div className="w-screen h-screen justify-items-center content-center">
+        <div className="flex w-screen h-screen items-center justify-center">
             <div className="flex flex-col gap-4 lg:gap-7 xl:gap-10 text-[44px] lg:text-[64px] xl:text-[72px] font-Onest font-bold leading-[48px] lg:leading-[56px] tracking-[%-2px]">
                 <div className="flex items-center gap-3">
                     <motion.h1 

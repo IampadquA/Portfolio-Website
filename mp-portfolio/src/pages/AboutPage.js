@@ -1,9 +1,8 @@
 
-import { Button } from '@/components/Button';
+
 import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import Image from 'next/image'
-import { CoolMode } from '@/components/CoolMode';
 import { CoolButton } from '@/components/CoolButton';
 
 
@@ -44,21 +43,22 @@ export const AboutPage = ({ isMobile }) => {
         <motion.h1
         initial={{ y : -10, opacity: 0 }}
         whileInView={{ y : 0, opacity: 1 }}
-        viewport={{ margin : "-200px" , once : true }}
+        viewport={{ margin : "-20px" , once : true }}
         transition={{ duration: 1 }}
         
         className='heading3 sm:text-[56px] text-center'>Who is Tarık ?</motion.h1>
         <motion.div 
         initial={{ scaleY: 0, opacity: 0 , transformOrigin: "top"} }
         whileInView={{ scaleY : 1, opacity: 1 }}
-        viewport={{ margin : "-200px" , once : true }}
+        viewport={{ once : true }}
         transition={{ duration: 1, delay : 1 }}
         
-        className='w-full min-h-[333px] sm:h-[556px] p-5 border-2 overflow-hidden'>
+        className='w-full min-h-[333px] sm:h-[556px] p-5 overflow-hidden'>
             <div className='w-full h-full bg-placeholder'>
                     <motion.div
                         initial={{ opacity: 0 } }
                         whileInView={{ opacity: 1 }}
+                        viewport={{ margin : "-20px" , once : true }}
                         transition={{ duration: 1, delay : 3 }}
                         className='sm:h-[556px]'
                     >
@@ -71,7 +71,7 @@ export const AboutPage = ({ isMobile }) => {
                 <motion.p 
                 initial={{ y : -10, opacity: 0 }}
                 whileInView={{ y : 0, opacity: 1 }}
-                viewport={{ margin : "-200px" , once : true }}
+                viewport={{ margin : "-20px" , once : true }}
                 transition={{ duration: 1 }}
                 
                 

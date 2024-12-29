@@ -31,7 +31,7 @@ export const MobileProjectsPage = () => {
   const y = useTransform(
     scrollYProgress,
     [0.283, 0.40, 0.55, 0.65, 0.75, 0.85, 1],
-    [initialTransformValue, initialTransformValue, "-16%", "-16%", "-49%", "-49%", "-100%"]
+    [initialTransformValue, initialTransformValue, "-16%", "-16%", "-80%", "-49%", "-100%"]
   );
   const openerHeight = useTransform(scrollYProgress, [0.40, 0.55], [initialTransformValue, "100%"]);
 

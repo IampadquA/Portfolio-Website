@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function IntroSection() {
   return (
-    <motion.div className="relative w-screen h-screen content-center justify-items-center lg:grid lg:grid-cols-5 lg:justify-items-start bg-bg-white">
-      <div className="z-10 relative md:col-start-2 md:col-span-3 flex flex-col gap-14 heading1 text-[72px] sm:text-[128px] md:text-[136px] lg:text-[156px] 2xl:text-[196px]">
+    <motion.div className="relative flex w-screen h-screen items-center justify-center lg:grid lg:grid-cols-5 lg:justify-items-start bg-bg-white">
+      <div className="z-10 relative md:col-start-2 md:col-span-3 flex flex-col gap-14 heading1 text-[72px] sm:text-[128px] md:text-[136px] lg:text-[156px] 2xl:text-[196px] border-4 w-fit h-fit">
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -21,7 +21,7 @@ export default function IntroSection() {
         </motion.h1>
       </div>
       <motion.div
-        className="z-50 inset-0 top-0 left-0 absolute bg-[#565656] justify-items-center content-center lg:grid lg:grid-cols-5 lg:justify-items-start"
+        className="flex z-50 inset-0 top-0 left-0 absolute bg-[#565656] items-center justify-center  lg:grid lg:grid-cols-5 lg:justify-items-start"
         initial={{ scaleY: 0, transformOrigin: "bottom" }}
         animate={{ scaleY: 1, transformOrigin: "bottom" }}
         exit={{ scaleY : 0, transformOrigin: "top" }}
