@@ -1,5 +1,3 @@
-
-
 import React, { useRef } from 'react'
 import { PresantationGrid } from './PresantationGrid'
 import { ProjectPagePath } from './ProjectPagePath'
@@ -28,10 +26,8 @@ export const DesktopProjectPage = ({isDesktop = false}) => {
     const opacityt = useTransform(scrollYProgress, [0.55, 0.6], [0, 2]);
     const translateYt = useTransform(scrollYProgress, [0.55, 0.6 , 0.65 , 0.75,], [50, 0, 0, -800]);
 
-    // Üçüncü sayfa için yeni dönüşümler
     const opacityThird = useTransform(scrollYProgress, [0.6, 0.75], ["0%", "100%"]);
     const translateYThird = useTransform(scrollYProgress, [0.7, 0.75], [50, 0]);
-
 
     const text = [
         "Project Overview",
@@ -48,7 +44,7 @@ export const DesktopProjectPage = ({isDesktop = false}) => {
         "Leveraged Firebase Functions and Node.js for backend logic Chose Firebase as the database to explore new technologies Developed lobby, invite, and matchmaking systems independently",
         "Current Status",
         "The project is still in progress and not yet deployed. The final stages of development are pending, with the potential for future completion during leisure time. Learning Outcomes This project was a significant learning experience, challenging me to build complex systems from the ground up and explore various web technologies. Future Plans Potential completion and deployment when time permits.",
-        ]
+    ]
     
     const heading = "TelepathyGame"
 
@@ -73,40 +69,47 @@ export const DesktopProjectPage = ({isDesktop = false}) => {
             <React.Fragment key="desktop-page">
                 <PresantationGrid isDesktop={isDesktop} className={"h-[90vh] m-10"} />
             </React.Fragment>
-
         )
     ]
-  return (
-    <div ref={containerRef} className='relative h-[600vh]' >
-        <motion.div className="sticky top-0 w-screen h-screen justify-items-center content-center overflow-hidden">
-            <motion.div className='flex w-screen' style={{ x: x || "0%", y: y || "0%" }}>
-                <ProjectPagePath transform={transform} />
-                <div className='w-screen h-[200vh] flex flex-shrink-0'>
-                    <motion.div 
-                    style={{ height : openerHeight }}
-                     className='relative w-full justify-items-center xl:w-2/3 xl:h-screen px-8 border-2 xl:border-x-0 border-bg-black overflow-hidden top-[25%] flex-shrink-0'>
-                        { isDesktop ?  desktopPages :  tabletPages[0]}
-                    </motion.div>
-                    { isDesktop && 
-                    <div className='relative flex flex-col top-[25%] gap-4 my-8'>
-                        <motion.h1 className='font-Onest font-bold text-[44px] leading-[56px] tracking-[-2%]' style={{opacity , translateY}}><Link className="hover:text-blue-accent" href="https://github.com/IampadquA/Telepathy-Game" target="_blank" >{heading}</Link></motion.h1>
-                            <motion.div className='w-full h-full overflow-hidden'>
-                                <motion.div className='flex flex-col gap-6 font-urbanist font-normal text-base pr-16 overflow-hidden ' style={{ opacity: opacityt, y: translateYt }} > 
-                                    {text.map((item, index) => (
-                                        <p key={index}>{item}</p>
-                                    ))}
-                                    <p>You can look at the code and get more information in projects <Link className=" font-bold hover:text-blue-accent" href="https://github.com/IampadquA/Telepathy-Game" target="_blank" >github page</Link></p>
+
+    return (
+        <div ref={containerRef} className='relative h-[600vh]'>
+            <motion.div className="sticky top-0 w-screen h-screen flex items-start justify-center overflow-hidden">
+                <motion.div className='flex w-screen' style={{ x: x || "0%", y: y || "0%" }}>
+                    <ProjectPagePath transform={transform} />
+                    <div className='w-screen h-[200vh] flex flex-shrink-0 '>
+                        <motion.div 
+                            style={{ height: openerHeight }}
+                            className='relative w-full justify-items-center xl:w-2/3 xl:h-screen px-8 border-2 xl:border-x-0 border-bg-black overflow-hidden top-[25%] flex-shrink-0'>
+                            {isDesktop ? desktopPages : tabletPages[0]}
+                        </motion.div>
+                        {isDesktop && 
+                            <div className='relative flex flex-col top-[25%] gap-4 my-8'>
+                                <motion.h1 
+                                    className='font-Onest font-bold text-[44px] leading-[56px] tracking-[-2%]' 
+                                    style={{opacity, translateY}}>
+                                    <Link className="hover:text-blue-accent" href="https://github.com/IampadquA/Telepathy-Game" target="_blank">{heading}</Link>
+                                </motion.h1>
+                                <motion.div className='w-full h-full overflow-hidden'>
+                                    <motion.div 
+                                        className='flex flex-col gap-6 font-urbanist font-normal text-base pr-16 overflow-hidden' 
+                                        style={{ opacity: opacityt, y: translateYt }}> 
+                                        {text.map((item, index) => (
+                                            <p key={index}>{item}</p>
+                                        ))}
+                                        <p>You can look at the code and get more information in projects <Link className="font-bold hover:text-blue-accent" href="https://github.com/IampadquA/Telepathy-Game" target="_blank">github page</Link></p>
+                                    </motion.div>
                                 </motion.div>
-                            </motion.div>
-                    </div>}
-                </div>
-                <div className='w-screen h-[200vh] flex flex-shrink-0'>
-                    <div className='relative w-full justify-items-center overflow-hidden top-[25%] flex-shrink-0'>
-                        <TechCloud isDesktop={isDesktop}/>
+                            </div>
+                        }
                     </div>
-                </div>
+                    <div className='w-screen h-[200vh] flex flex-shrink-0'>
+                        <div className='relative w-full justify-items-center overflow-hidden top-[25%] flex-shrink-0'>
+                            <TechCloud isDesktop={isDesktop}/>
+                        </div>
+                    </div>
+                </motion.div>
             </motion.div>
-        </motion.div>
-    </div>
-  )
+        </div>
+    )
 }

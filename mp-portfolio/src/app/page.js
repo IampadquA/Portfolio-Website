@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
-  const [isAnimationEnd, setIsAnimationEnd] = useState(false);
+  const [isAnimationEnd, setIsAnimationEnd] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);  
 

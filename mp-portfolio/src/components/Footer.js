@@ -28,7 +28,7 @@ export const Footer = () => {
   ]
 
   return (
-    <div className='relative w-full pt-[72px] bg-text-p2'>
+    <div className='relative w-full pt-[72px] bg-text-p2 mt-10'>
       <hr className='w-full h-[2px] bg-bg-white' />
         <div className='flex flex-col lg:flex-row'>
             <div className='w-full flex flex-col gap-3 px-12 py-9 font-Onest font-bold text-[44px] xl:text-[64px] leading-[56px] tracking-[-2%] text-bg-white'>
