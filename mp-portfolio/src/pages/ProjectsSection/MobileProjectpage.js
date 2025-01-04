@@ -1,6 +1,6 @@
 
 
-import React, { useRef , useEffect , useState} from 'react'
+import React, { useRef , useState} from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Telepathy } from './Telepathy';
 import { ProjectPagePath } from './ProjectPagePath';
@@ -33,7 +33,7 @@ export const MobileProjectsPage = () => {
     [0.283, 0.40, 0.55, 0.65, 0.75, 0.85, 1],
     [initialTransformValue, initialTransformValue, "-16%", "-16%", "-89%", "-49%", "-100%"]
   );
-  const openerHeight = useTransform(scrollYProgress, [0.40, 0.55], [initialTransformValue, "106%"]);
+  2
 
 
   return (

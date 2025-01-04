@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from 'react'
-import { Input } from './Input'
-import { Button } from './Button'
-import TextAreaRe from './TextAreaRe'
+import { Button } from '@/components/Button'
+import TextAreaRe from '@/components/TextAreaRe'
+import { Input } from '@/components/Input';
 
 export const ContactForm = ({ className , setIsSubmited }) => {
   const [firstNameValue, setFirstNameValue] = useState("");

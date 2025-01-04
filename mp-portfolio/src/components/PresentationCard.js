@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Image from 'next/image'
 import { Safari } from './SafariMockup'
 
 export const PresentationCard = ({className , imgSrc = "/images/TelepathyGameImages/tpmainpage1.png" , alt = "placeholder" , width , height, imgClassName  , discription = false , text}) => {

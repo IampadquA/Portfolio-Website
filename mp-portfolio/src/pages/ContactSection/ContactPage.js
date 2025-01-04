@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ContactForm } from '@/components/ContactForm'
 import Link from 'next/link';
-import { AfterSubmit } from '@/components/AfterSubmit';
+import { AfterSubmit } from './AfterSubmit';
+import { ContactForm } from './ContactForm';
 
 export const ContactPage = () => {
 

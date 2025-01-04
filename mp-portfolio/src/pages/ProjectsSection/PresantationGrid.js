@@ -1,6 +1,6 @@
 import React from 'react'
-import { PresentationCard } from './PresentationCard'
-import { Safari } from './SafariMockup'
+import { Safari } from '@/components/SafariMockup'
+
 
 export const PresantationGrid = ({ className , isDesktop }) => {
 

@@ -37,26 +37,3 @@ body::-webkit-scrollbar {
   @apply font-urbanist font-normal text-[14px] sm:text-[24px] sm:leading-[26px];
 }
 
-@supports (-webkit-touch-callout: none) {
-  .motion-safe {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-}
-
-/* Safari-specific fixes */
-@supports (-webkit-touch-callout: none) {
-  .safari-fix {
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-  }
-  
-  .transform-gpu {
-    transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-  }
-}

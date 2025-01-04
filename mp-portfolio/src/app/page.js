@@ -1,10 +1,10 @@
 'use client';
 import { Footer } from "@/components/Footer";
 import IntroSection from "@/components/IntroSection";
-import { AboutPage } from "@/pages/AboutPage";
-import { ContactPage } from "@/pages/ContactPage";
-import { LandingPage } from "@/pages/LandingPage";
-import { ProjectsPage } from "@/pages/ProjectsPage";
+import { AboutPage } from "@/pages/AboutSection/AboutPage";
+import { ContactPage } from "@/pages/ContactSection/ContactPage";
+import { LandingPage } from "@/pages/HeroSection/LandingPage";
+import { ProjectsPage } from "@/pages/ProjectsSection/ProjectsPage";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 

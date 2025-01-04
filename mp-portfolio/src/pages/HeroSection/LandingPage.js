@@ -1,5 +1,5 @@
 
-import { Land } from '@/components/Land'
+import { Land } from './Land'
 import { TourGuider } from '@/components/TourGuider'
 
 export const LandingPage = ({className , isMobile  } ) => {

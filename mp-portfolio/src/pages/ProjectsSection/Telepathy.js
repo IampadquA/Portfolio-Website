@@ -1,8 +1,7 @@
 import React from 'react'
 import { useRef } from 'react'
 import { useTransform , useScroll} from 'framer-motion'    
-import { PresentationCard } from './PresentationCard'
-import { Safari } from './SafariMockup'
+import { Safari } from '@/components/SafariMockup'
 import Link from 'next/link'
 
 export const Telepathy = () => {
@@ -59,7 +58,7 @@ export const Telepathy = () => {
 
 
   return (
-    <div ref={ref} className='w-full justify-items-center content-center flex flex-col gap-1 py-9 label'>
+    <div ref={ref} className='w-full  h-fit justify-items-center content-center flex flex-col gap-1 py-9 label'>
         <h1 
         className='font-Onest font-semibold text-2xl sm:text-[32px] text-center leading-10 tracking-[-2%]'>Telepathy Game</h1>
         <Safari src={"/images/TelepathyGameImages/tpmainpage1.png"} className='h-[220px] sm:h-[589px] p-7' />
