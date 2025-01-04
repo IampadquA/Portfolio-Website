@@ -80,3 +80,5 @@ export const AfterSubmit = () => {
     </div>
   )
 }
+
+export default AfterSubmit;

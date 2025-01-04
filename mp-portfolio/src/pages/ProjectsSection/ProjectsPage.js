@@ -1,5 +1,4 @@
 import { DesktopProjectPage } from './DesktopProjectPage'
-import { MobileProjectsPage } from './MobileProjectpage'
 import React from 'react'
 import MobileProjectSection from './MobileProjectSection'
 

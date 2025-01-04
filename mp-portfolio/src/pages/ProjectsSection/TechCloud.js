@@ -138,3 +138,5 @@ export const TechCloud = ({ isDesktop = false }) => {
     </>
   );
 };
+
+export default TechCloud;

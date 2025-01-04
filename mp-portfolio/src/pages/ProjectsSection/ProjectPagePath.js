@@ -15,3 +15,5 @@ export const ProjectPagePath = ({ transform }) => {
     </div>
   )
 }
+
+export default ProjectPagePath;

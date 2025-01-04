@@ -30,3 +30,5 @@ export const PresantationGrid = ({ className , isDesktop }) => {
     </>
   )
 }
+
+export default PresantationGrid;

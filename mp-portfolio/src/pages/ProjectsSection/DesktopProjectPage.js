@@ -113,3 +113,5 @@ export const DesktopProjectPage = ({isDesktop = false}) => {
         </div>
     )
 }
+
+export default DesktopProjectPage;

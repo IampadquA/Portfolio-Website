@@ -61,3 +61,5 @@ export const ContactForm = ({ className , setIsSubmited }) => {
     </form>
   )
 }
+
+export default ContactForm;

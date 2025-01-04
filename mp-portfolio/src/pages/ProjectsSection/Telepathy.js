@@ -81,3 +81,5 @@ export const Telepathy = () => {
     </div>
   )
 }
+
+export default Telepathy;

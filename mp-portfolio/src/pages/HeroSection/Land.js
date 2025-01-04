@@ -113,4 +113,6 @@ export const Land = ({ className ,isMobile } ) => {
   )
 }
 
+export default Land;
+
 
