@@ -15,7 +15,7 @@ export const AboutPage = ({ isMobile }) => {
         "I am a student at Akdeniz Unviversity in Managament Information Systems major",
         "I am creating stuffs in digital since when my 10th grade and I love this",
         "I was very enthusiastic and after long insistence, I did a graphic design internship at an agency.",
-        "now I am a 2th grade in major and  I wanna get more experience and improe my skills before graduation",
+        "Now I am a 2th grade in major and I wanna get more experience and improve my skills before graduation",
     ]
 
     const [buttonText,setButtonText] = useState("Hi Button");

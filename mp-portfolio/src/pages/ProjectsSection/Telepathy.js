@@ -16,7 +16,7 @@ export const Telepathy = () => {
     const text = [
             `Project Overview
           
-            TelepathyGame is a collaborative web-based game that challenges players to predict their partner's next choice, creating an engaging and interactive experience. Technologies Used
+            TelepathyGame is a collaborative web-based game that challenges players to predict their partner's next choice, creating an engaging and interactive experience.
             
             Technologies Used
           
