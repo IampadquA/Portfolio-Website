@@ -12,10 +12,10 @@ export const AboutPage = ({ isMobile }) => {
     const texts = [
         "Full name is Tarık Efe Gülmez",
         "I am 19",
-        "I am a student at Akdeniz Unviversity in Managament Information Systems major",
-        "I am creating stuffs in digital since when my 10th grade and I love this",
-        "I was very enthusiastic and after long insistence, I did a graphic design internship at an agency.",
-        "Now I am a 2th grade in major and I wanna get more experience and improve my skills before graduation",
+        "I am a student at Akdeniz University, majoring in Management Information Systems",
+        "I have been creating digital content since 10th grade and I love it",
+        "I was very enthusiastic and after much persistence, I completed a graphic design internship at an agency",
+        "Now I am in my 2nd year and I want to gain more experience and improve my skills before graduation"
     ]
 
     const [buttonText,setButtonText] = useState("Hi Button");
