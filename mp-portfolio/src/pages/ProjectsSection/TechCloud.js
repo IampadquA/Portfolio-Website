@@ -12,15 +12,15 @@ export const TechCloud = ({ isDesktop = false }) => {
     "figma", "adobephotoshop", "dotnet", "express", 
     "dart", "nodedotjs", "firebase", "mysql", "mongodb", 
     "firebase", "javascript", "csharp", "python", "cplusplus", 
-    "c", "dart" ,
+    "c", "dart" ,"nextdotjs","typescript","rust","postgresql"
   ];
 
   const Techs = [
-    { 'Front-End': ['React', 'Flutter', 'TailwindCSS', 'Framer Motion'] },
+    { 'Front-End': ['Next.js', 'React', 'Flutter', 'Framer Motion'] },
     { 'Design': ['Figma', 'Photoshop'] },
     { 'Back-End': ['Express.js', 'Nodejs' , 'Asp.Net'] },
-    { 'Database': ['MongoDB', 'Firebase' ,'MySQL'] },
-    { 'Languages': ['Javascript', 'Dart' ,'C#', 'Python', 'C++', 'C'] },
+    { 'Database': ['MongoDB', 'Firebase' ,'Postgresql','MySQL'] },
+    { 'Languages': ['Typescript', 'Javascript','Rust', 'Dart' ,'C#', 'Python', 'C++', 'C', ] },
   ];
 
   const mobile = (
